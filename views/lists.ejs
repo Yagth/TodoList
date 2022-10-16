@@ -1,0 +1,15 @@
+<%- include("header") -%>
+        <div class="box" id="heading">
+            <h1>Your Lists</h1>
+        </div>      
+        <% lists.forEach(function(list){ %>
+            <div class="box lists" >
+                <h1 class="header grid">
+                    <a class="link" href="/<%=list.name%>"><%= list.name %></a>
+                    <form action="/deleteList" method="POST">
+                        <button name="listId" value="<%= list._id %>" type="submit">-</button>
+                    </form>
+                </h1>
+            </div>
+        <% }) %>    
+<%- include("footer") -%>
