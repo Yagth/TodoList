@@ -8,6 +8,9 @@
   },
   "author": "Yab Dr.",
   "license": "ISC",
+  "engines": {
+    "node": "12.22.9"
+  },
   "dependencies": {
     "body-parser": "^1.20.0",
     "ejs": "^3.1.8",
